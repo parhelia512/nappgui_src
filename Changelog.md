@@ -4,28 +4,29 @@
 
 ### Added
 
-- HiDPI (Per-Monitor-v2) support in the Windows backend. [Issue](). [Doc](). [Commit]().
+- HiDPI (Per-Monitor-v2) support in the Windows backend. [Issue](https://github.com/frang75/nappgui_src/issues/40). [Doc](https://nappgui.com/en/gui/gui.html#h3). [Commit](https://github.com/frang75/nappgui_src/commit/c4f5990b76c62194e6afd2b024f17ecc6d86a0d5).
     - `gui_dpi_aware()`.
     - `font_native_dpi()`.
     - `font_metrics_dpi()`.
     - `font_with_cell_size()`.
-- Wayland support in the GTK3 backend. [Issue](https://github.com/frang75/nappgui_src/issues/279). [Doc](). [Commit]().
+- Wayland support in the GTK3 backend. [Issue](https://github.com/frang75/nappgui_src/issues/279). [Doc](https://nappgui.com/en/gui/gui.html#h4). [Commit](https://github.com/frang75/nappgui_src/commit/d955e72ef15ceb43e295084013c5990727b309ea).
     - `"-gdkbackend=x11"`/`"-gdkbackend=wayland"` `osmain()`/`osmain_sync()` option, to force a specific GDK backend.
+- Support for macOS Golden Gate. [Commit]().
 
 ### Fixed
 
-- GTK3 backend no longer forces `GDK_BACKEND=x11`, breaking Wayland-only distros without an X11 session (Ubuntu 26.04+). [Issue](https://github.com/frang75/nappgui_src/issues/279). [Commit]().
+- GTK3 backend no longer forces `GDK_BACKEND=x11`, breaking Wayland-only distros without an X11 session (Ubuntu 26.04+). [Issue](https://github.com/frang75/nappgui_src/issues/279). [Commit](https://github.com/frang75/nappgui_src/commit/d955e72ef15ceb43e295084013c5990727b309ea).
 
 ### Changed
 
-- `window_overlay()` now takes `origin`, `halign` and `valign`. [Commit]().
-- `menu_launch()` coordinates are now local to the parent window. [Commit]().
+- `window_overlay()` now takes `origin`, `halign` and `valign`. [Commit](https://github.com/frang75/nappgui_src/commit/d955e72ef15ceb43e295084013c5990727b309ea).
+- `menu_launch()` coordinates are now local to the parent window. [Commit](https://github.com/frang75/nappgui_src/commit/d955e72ef15ceb43e295084013c5990727b309ea).
 
 ### Removed
 
-- `ekFPIXELS`, `ekFPOINTS`, `ekFCELL` font size unit flags in `fstyle_t`. [Commit]().
-- `font_units()`. [Commit]().
-- `textview_units()`. [Commit]().
+- `ekFPIXELS`, `ekFPOINTS`, `ekFCELL` font size unit flags in `fstyle_t`. [Commit](https://github.com/frang75/nappgui_src/commit/c4f5990b76c62194e6afd2b024f17ecc6d86a0d5).
+- `font_units()`. [Commit](https://github.com/frang75/nappgui_src/commit/c4f5990b76c62194e6afd2b024f17ecc6d86a0d5).
+- `textview_units()`. [Commit](https://github.com/frang75/nappgui_src/commit/c4f5990b76c62194e6afd2b024f17ecc6d86a0d5).
 
 ## v1.6.2 - July 02, 2026 (r6905)
 
